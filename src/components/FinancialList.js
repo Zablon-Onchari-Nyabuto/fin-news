@@ -1,10 +1,10 @@
 import React from "react";
 import FinancialNews from "./FinancialNews";
 
-function FinancialList({ transactionsListed, search}) {
+function FinancialList({ financialListed, search}) {
 
-  const filtered = transactionsListed.filter((trans) => {
-    let result = trans.description.toLowerCase().includes(search)
+  const filtered = financialListed.filter((fin) => {
+    let result = fin.description.toLowerCase().includes(search)
     return result;
   })
 
@@ -22,11 +22,11 @@ function FinancialList({ transactionsListed, search}) {
             <h3 className="ui center aligned header">Category</h3>
           </th>
           <th>
-            <h3 className="ui center aligned header">Amount</h3>
+            <h3 className="ui center aligned header">strength</h3>
           </th>
         </tr>
-        {filtered.map((trans) => (
-          <Transaction key={trans.id} trans={trans} />
+        {filtered.map((fin) => (
+          <FinancialNews key={fin.id} fin={fin} />
         ))}
       </tbody>
     </table>

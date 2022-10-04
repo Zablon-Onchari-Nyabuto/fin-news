@@ -5,6 +5,7 @@ import Watchlist from './Watchlist';
 import AboutUs from './AboutUs';
 import NavBar from "./Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import 'semantic-ui-css/semantic.min.css';
 
 function App() {
 

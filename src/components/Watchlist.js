@@ -1,32 +1,32 @@
 import React, { useEffect, useState } from "react";
 import FinancialList from "./FinancialList";
 import Search from "./Search";
-import AddTransactionForm from "./AddTransactionForm";
+import FinancialForm from "./FinancialForm";
 
 function WatchList() {
-  const [transactionsListed, setTransactionsListed] = useState([]);
+  const [financialListed, setFinancialsListed] = useState([]);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8001/transactions")
+    fetch("http://localhost:3000/financials")
       .then((res) => res.json())
-      .then((data) => setTransactionsListed(data));
+      .then((data) => setFinancialsListed(data));
     }, []);
 
-  function addTransaction(newTransaction) {
-    const updateTransactions = [...transactionsListed, newTransaction]
-    setTransactionsListed(updateTransactions)
+  function addFinancial(newFinancial) {
+    const updateFinancials = [...financialListed, newFinancial]
+    setFinancialsListed(updateFinancials)
   }
   
-  function searchTransaction(newSearch){
+  function searchFinancial(newSearch){
     setSearch(newSearch)
   }
 
   return (
     <div>
-      <Search search={search} searchTrans={searchTransaction} />
-      <FinancialForm addTrans={addTransaction}/>
-      <FinancialList transactionsListed={transactionsListed} search={search} />
+      <Search search={search} searchFin={searchFinancial} />
+      <FinancialForm addFin={addFinancial}/>
+      <FinancialList FinancialListed={financialListed} search={search} />
     </div>
   );
 }

@@ -1,42 +1,42 @@
 import React, { useState } from "react";
 
-function FinancialForm({ addTrans }) {
-  const [transactionFormData, setTransactionFormData] = useState({
+function FinancialForm({ addFin }) {
+  const [financialFormData, setFinancialFormData] = useState({
     date: "", 
     description: "", 
     category: "", 
-    amount: "",
+    strength: "",
   })
 
   function handleChange(e){
     const key = e.target.id
-    setTransactionFormData({
-      ...transactionFormData,
+    setFinancialFormData({
+      ...financialFormData,
       [key]: e.target.value
     })
   }
 
   function handleSubmit(e) {
     e.preventDefault()
-  fetch("http://localhost:8001/transactions", {
+  fetch("http://localhost:3000/financials", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(transactionFormData),
+    body: JSON.stringify(financialFormData),
   })
     .then((res) => res.json())
-    .then((data) => addTrans(data));
+    .then((data) => addFin(data));
   }
 
   return (
     <div className="ui segment">
       <form className="ui form" onSubmit={handleSubmit}>
         <div className="inline fields">
-          <input type="date" name="date" value={transactionFormData.date} id="date" placeholder="Date" onChange={handleChange}/>
-          <input type="text" name="description" value={transactionFormData.description} id="description" placeholder="Description" onChange={handleChange}/>
-          <input type="text" name="category" value={transactionFormData.category} id="category" placeholder="Category" onChange={handleChange}/>
-          <input type="number" name="amount" value={transactionFormData.amount} id="amount" placeholder="Amount" step="0.01" onChange={handleChange} />
+          <input type="date" name="date" value={financialFormData.date} id="date" placeholder="Date" onChange={handleChange}/>
+          <input type="text" name="description" value={financialFormData.description} id="description" placeholder="Description" onChange={handleChange}/>
+          <input type="text" name="category" value={financialFormData.category} id="category" placeholder="Category" onChange={handleChange}/>
+          <input type="number" name="strength" value={financialFormData.strength} id="strength" placeholder="Amount" onChange={handleChange} />
         </div>
         <button className="ui button" type="submit" >
           Add News 
