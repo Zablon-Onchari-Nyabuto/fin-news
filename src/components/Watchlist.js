@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import TransactionsList from "./TransactionsList";
+import FinancialList from "./FinancialList";
 import Search from "./Search";
 import AddTransactionForm from "./AddTransactionForm";
 
-function AccountContainer() {
+function WatchList() {
   const [transactionsListed, setTransactionsListed] = useState([]);
   const [search, setSearch] = useState("");
 
@@ -25,8 +25,10 @@ function AccountContainer() {
   return (
     <div>
       <Search search={search} searchTrans={searchTransaction} />
-      <AddTransactionForm addTrans={addTransaction}/>
-      <TransactionsList transactionsListed={transactionsListed} search={search} />
+      <FinancialForm addTrans={addTransaction}/>
+      <FinancialList transactionsListed={transactionsListed} search={search} />
     </div>
   );
 }
+
+export default WatchList;
