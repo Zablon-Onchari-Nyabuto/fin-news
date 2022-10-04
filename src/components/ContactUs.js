@@ -9,6 +9,7 @@ function ContactUs() {
       <div class="card-body">
         <h5 class="card-title">Forex Analyst</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <button type="button" class="btn btn-primary">Get Contact</button>
       </div>
     </div>
   </div>
@@ -18,6 +19,7 @@ function ContactUs() {
       <div class="card-body">
         <h5 class="card-title">Fixed Income Analyst</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <button type="button" class="btn btn-primary">Get Contact</button>
       </div>
     </div>
   </div>
@@ -27,6 +29,7 @@ function ContactUs() {
       <div class="card-body">
         <h5 class="card-title">Commodities Analyst</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <button type="button" class="btn btn-primary">Get Contact</button>
       </div>
     </div>
   </div>
@@ -36,6 +39,7 @@ function ContactUs() {
       <div class="card-body">
         <h5 class="card-title">Indice Analyst</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <button type="button" class="btn btn-primary">Get Contact</button>
       </div>
     </div>
   </div>
