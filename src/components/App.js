@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ContactUs from "./ContactUs"
 import Watchlist from './Watchlist';
 import AboutUs from './AboutUs';
-import NavBar from './NavBar';
+import NavBar from "./Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {

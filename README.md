@@ -4,7 +4,7 @@
 
 ## Description
 
-Fin-News is a website that provides financial news and data to users to make informed financial decisions in THE MARKET. The website has been created to provide support to the users and provide a one stop shop for accurate data. 
+Fin-News is a website that provides financial news and data to users to make informed financial decisions in the market. The website has been created to provide support to the users and provide a one stop shop for accurate data. 
 
 ## Setup Requirements
 
