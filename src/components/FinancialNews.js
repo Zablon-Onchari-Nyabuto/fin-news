@@ -6,7 +6,7 @@ function FinancialNews({ fin }) {
       <td>{fin.date}</td>
       <td>{fin.description}</td>
       <td>{fin.category}</td>
-      <td>{fin.amount}</td>
+      <td>{fin.strength}</td>
     </tr>
   );
 }
