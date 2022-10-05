@@ -1,88 +1,91 @@
 {
-"financials": [
+  "financials": [
     {
       "id": 1,
-      "date": "2019-12-01",
-      "description": "Paycheck from Bob's Burgers",
-      "category": "Income",
-      "strength": 1000
+      "date": "2022-10-04",
+      "description": "Bond yields to deep on medium term",
+      "category": "Fixed Income",
+      "strength": "weak"
     },
     {
       "id": 2,
-      "date": "2019-12-01",
-      "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-      "category": "Food",
-      "strength": -10.55
+      "date": "2022-10-01",
+      "description": "The dollar's continued strength over the shilling set to continue",
+      "category": "Forex",
+      "strength": "medium"
     },
     {
       "id": 3,
-      "date": "2019-12-02",
-      "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-      "category": "Food",
-      "strength": -10.55
+      "date": "2022-10-02",
+      "description": "South is the way for the battered Ugandan Shilling",
+      "category": "Forex",
+      "strength": "strong"
     },
     {
       "id": 4,
-      "date": "2019-12-04",
-      "description": "Sunglasses, Urban Outfitters",
-      "category": "Fashion",
-      "strength": -24.99
+      "date": "2022-10-03",
+      "description": "Oil price to continue rising in the short term for kenyan traders",
+      "category": "Commodities",
+      "strength": "medium"
     },
     {
       "id": 5,
-      "date": "2019-12-06",
-      "description": "Venmo, Alice Pays you for Burrito",
-      "category": "Food",
-      "strength": 8.75
+      "date": "2022-10-04",
+      "description": "Tanzania's shilling to continue short term rise",
+      "category": "Forex",
+      "strength": "strong"
     },
     {
       "id": 6,
-      "date": "2019-12-06",
-      "description": "Chipotle",
-      "category": "Food",
-      "strength": -17.59
+      "date": "2022-10-01",
+      "description": "The Turkana trading situation",
+      "category": "Forex",
+      "strength": "weak"
     },
     {
       "id": 7,
-      "date": "2019-12-07",
-      "description": "Birthday Check from Grandma",
-      "category": "Gift",
-      "strength": 50
+      "date": "2022-10-02",
+      "description": "Nairobi stock Indice in a long term 20 year drop",
+      "category": "Indices",
+      "strength": "weak"
     },
     {
       "id": 8,
-      "date": "2019-12-09",
-      "description": "Lyft Ride",
-      "category": "Transportation",
-      "strength": -13.25
+      "date": "2022-10-03",
+      "description": "Copper found in Webuye",
+      "category": "Commodities",
+      "strength": "strong"
     },
     {
       "id": 9,
-      "date": "2019-12-11",
-      "description": "Paycheck from Bob's Burgers",
-      "category": "Income",
-      "strength": 1000
+      "date": "2022-10-04",
+      "description": "Government set to raise taxes in a bid to curb borrowing act",
+      "category": "Fixed Income",
+      "strength": "strong"
     },
     {
       "id": 10,
-      "date": "2019-12-16",
-      "description": "Tickets, Flatiron Multiplex Cinemas",
-      "category": "Entertainment",
-      "strength": -24
+      "date": "2022-10-02",
+      "description": "What next for the Ugandan Indice, a plummet!",
+      "category": "Indices",
+      "strength": "medium"
     },
     {
       "id": 11,
-      "date": "2019-12-16",
-      "description": "MTA Vending Machine: MetroCard",
-      "category": "Transportation",
-      "strength": -116.39
+      "date": "2022-10-03",
+      "description": "Ethiopian Prime minister opens up a mining office in the central Tigray area",
+      "category": "Commodities",
+      "strength": "medium"
     },
     {
       "id": 12,
-      "date": "2019-12-17",
-      "description": "Venmo, Pay Roommate for Rent",
-      "category": "Housing",
-      "strength": -975
+      "date": "2022-10-04",
+      "description": "Somalia Indice slowly picking up",
+      "category": "Indices",
+      "strength": "weak"
+    },
+    {
+      "id": 13
     }
   ]
 }
