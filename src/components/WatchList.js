@@ -6,18 +6,18 @@ import "react-bootstrap";
 import { useEffect, useState } from "react";
 
 function WatchList() {
-  const [financialListed, setFinancialsListed] = useState([]);
+  const [financials, setFinancials] = useState([]);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:3000/financials")
       .then((res) => res.json())
-      .then((data) => setFinancialsListed(data));
+      .then((data) => setFinancials(data));
   }, []);
 
   function addFinancial(newFinancial) {
-    const updateFinancials = [...financialListed, newFinancial]
-    setFinancialsListed(updateFinancials)
+    const updateFinancials = [...financials, newFinancial]
+    setFinancials(updateFinancials)
   }
 
   function searchFinancial(newSearch) {
@@ -28,7 +28,7 @@ function WatchList() {
     <div>
       <Search search={search} searchFin={searchFinancial} />
       <FinancialForm addFin={addFinancial} />
-      <FinancialList FinancialListed={financialListed} search={search} />
+      <FinancialList Financials={financials} search={search} />
     </div>
   );
 }
