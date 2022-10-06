@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Homepage from './Homepage';
 import WatchList from './WatchList';
 import ContactUs from "./ContactUs"
 import AboutUs from './AboutUs';
@@ -12,7 +13,8 @@ function App() {
     <div className='App'>
       <NavBar />
       <Routes>
-        <Route path={'/watchlist'}  element={<WatchList />} exact />
+      <Route path={"/"}  element={<Homepage />} />
+        <Route path={"/watchlist"}  element={<WatchList />} />
         <Route path={"/aboutus"} element={<AboutUs />}/>
         <Route path={"/contactus"} element={<ContactUs />} />
       </Routes>
