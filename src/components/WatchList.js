@@ -12,7 +12,7 @@ function WatchList() {
   useEffect(() => {
     fetch("http://localhost:3000/financials")
       .then((res) => res.json())
-      .then((data) => setFinancials(data));
+      .then((data) => setFinancials(data.financials));
   }, []);
 
   function addFinancial(newFinancial) {
