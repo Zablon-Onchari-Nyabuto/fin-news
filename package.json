@@ -2,6 +2,7 @@
   "name": "fin-news",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zablon-onchari-nyabuto.github.io/fin-news/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -18,16 +19,18 @@
     "json-server": "^0.17.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "master -d build",
     "start": "react-scripts start",
     "server": "node server.js",
+    "json-server": "json-server --watch db.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-
   },
-  "engines" : { 
-    "npm" : ">=8.0.0 <9.0.0",
-    "node" : ">=16.0.0 <19.0.0"
+  "engines": {
+    "npm": ">=8.0.0 <9.0.0",
+    "node": ">=16.0.0 <19.0.0"
   },
   "eslintConfig": {
     "extends": [
@@ -46,5 +49,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "#### Created By Zablon Onchari Nyabuto on 05-10-2022",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zablon-Onchari-Nyabuto/fin-news.git"
+  },
+  "author": "Zablon Onchari Nyabuto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zablon-Onchari-Nyabuto/fin-news/issues"
   }
 }
