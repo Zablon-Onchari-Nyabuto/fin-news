@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import FinancialList from "./FinancialList";
 import Search from "./Search";
 import FinancialForm from "./FinancialForm";
 import "react-bootstrap";
+import { useEffect, useState } from "react";
 
 function WatchList() {
   const [financialListed, setFinancialsListed] = useState([]);
@@ -12,21 +13,21 @@ function WatchList() {
     fetch("http://localhost:3000/financials")
       .then((res) => res.json())
       .then((data) => setFinancialsListed(data));
-    }, []);
+  }, []);
 
   function addFinancial(newFinancial) {
     const updateFinancials = [...financialListed, newFinancial]
     setFinancialsListed(updateFinancials)
   }
-  
-  function searchFinancial(newSearch){
+
+  function searchFinancial(newSearch) {
     setSearch(newSearch)
   }
 
   return (
     <div>
       <Search search={search} searchFin={searchFinancial} />
-      <FinancialForm addFin={addFinancial}/>
+      <FinancialForm addFin={addFinancial} />
       <FinancialList FinancialListed={financialListed} search={search} />
     </div>
   );
