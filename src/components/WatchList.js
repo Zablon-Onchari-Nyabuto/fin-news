@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import FinancialList from "./FinancialList";
 import Search from "./Search";
 import FinancialForm from "./FinancialForm";
+import "react-bootstrap";
 
 function WatchList() {
   const [financialListed, setFinancialsListed] = useState([]);
