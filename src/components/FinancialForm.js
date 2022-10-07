@@ -7,7 +7,6 @@ function FinancialForm({ addFin }) {
     category: "", 
     strength: "",
   })
-  console.log(financialFormData)
 
   function handleChange(e){
     const key = e.target.id

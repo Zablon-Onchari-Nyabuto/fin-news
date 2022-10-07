@@ -1,12 +1,12 @@
 import React from "react";
 
-function FinancialNews({ fin }) {
+function FinancialNews({ financials }) {
   return (
     <tr>
-      <td>{fin.date}</td>
-      <td>{fin.description}</td>
-      <td>{fin.category}</td>
-      <td>{fin.strength}</td>
+      <td>{financials.date}</td>
+      <td>{financials.description}</td>
+      <td>{financials.category}</td>
+      <td>{financials.strength}</td>
     </tr>
   );
 }

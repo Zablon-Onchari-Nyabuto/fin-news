@@ -1,8 +1,8 @@
 import React from "react";
 import FinancialNews from "./FinancialNews";
 
-function FinancialList(fin) {
-
+function FinancialList({financials}) {
+  console.log(financials)
   return (
     <table className="ui celled striped padded table">
       <tbody>
@@ -20,7 +20,8 @@ function FinancialList(fin) {
             <h3 className="ui center aligned header">strength</h3>
           </th>
         </tr>
-          <FinancialNews key={fin.id} fin={fin} />
+        {financials.map((financial) => (
+        <FinancialNews key={financial.id} financials={financial}/>))}
       </tbody>
     </table>
   );
