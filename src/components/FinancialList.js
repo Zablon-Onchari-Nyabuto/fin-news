@@ -1,12 +1,7 @@
 import React from "react";
 import FinancialNews from "./FinancialNews";
 
-function FinancialList({ financialListed, search}) {
-
-  const filtered = financialListed.filter((fin) => {
-    let result = fin.description.toLowerCase().includes(search)
-    return result;
-  })
+function FinancialList(fin) {
 
   return (
     <table className="ui celled striped padded table">
@@ -25,9 +20,7 @@ function FinancialList({ financialListed, search}) {
             <h3 className="ui center aligned header">strength</h3>
           </th>
         </tr>
-        {filtered.map((fin) => (
           <FinancialNews key={fin.id} fin={fin} />
-        ))}
       </tbody>
     </table>
   );

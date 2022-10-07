@@ -7,6 +7,7 @@ function FinancialForm({ addFin }) {
     category: "", 
     strength: "",
   })
+  console.log(financialFormData)
 
   function handleChange(e){
     const key = e.target.id
@@ -18,7 +19,7 @@ function FinancialForm({ addFin }) {
 
   function handleSubmit(e) {
     e.preventDefault()
-  fetch("hhttps://glacial-savannah-39467.herokuapp.com/financials", {
+  fetch("https://glacial-savannah-39467.herokuapp.com/financials", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -36,7 +37,7 @@ function FinancialForm({ addFin }) {
           <input type="date" name="date" value={financialFormData.date} id="date" placeholder="Date" onChange={handleChange}/>
           <input type="text" name="description" value={financialFormData.description} id="description" placeholder="Description" onChange={handleChange}/>
           <input type="text" name="category" value={financialFormData.category} id="category" placeholder="Category" onChange={handleChange}/>
-          <input type="number" name="strength" value={financialFormData.strength} id="strength" placeholder="Amount" onChange={handleChange} />
+          <input type="text" name="strength" value={financialFormData.strength} id="strength" placeholder="Strength" onChange={handleChange} />
         </div>
         <button className="ui button" type="submit" >
           Add News 
