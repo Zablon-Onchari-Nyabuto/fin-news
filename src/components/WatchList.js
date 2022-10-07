@@ -8,11 +8,14 @@ import { useEffect, useState } from "react";
 function WatchList() {
   const [financials, setFinancials] = useState([]);
   const [search, setSearch] = useState("");
+  console.log(financials)
 
   useEffect(() => {
     fetch("https://glacial-savannah-39467.herokuapp.com/financials")
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        setFinancials(data)
+      })
   }, []);
 
   function addFinancial(newFinancial) {
@@ -28,7 +31,7 @@ function WatchList() {
     <div>
       <Search search={search} searchFin={searchFinancial} />
       <FinancialForm addFin={addFinancial} />
-      <FinancialList Financials={financials} search={search} />
+      <FinancialList financials={financials} search={search} />
     </div>
   );
 }
