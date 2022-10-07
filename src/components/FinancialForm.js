@@ -18,7 +18,7 @@ function FinancialForm({ addFin }) {
 
   function handleSubmit(e) {
     e.preventDefault()
-  fetch("http://localhost:3000/financials", {
+  fetch("hhttps://glacial-savannah-39467.herokuapp.com/financials", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

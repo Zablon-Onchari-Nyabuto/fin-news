@@ -10,9 +10,9 @@ function WatchList() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/financials")
+    fetch("https://glacial-savannah-39467.herokuapp.com/financials")
       .then((res) => res.json())
-      .then((data) => setFinancials(data.financials));
+      .then((data) => console.log(data));
   }, []);
 
   function addFinancial(newFinancial) {
